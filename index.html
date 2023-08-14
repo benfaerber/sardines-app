@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sardines Private Beta</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    </head>
+    <body class="bg-info text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#sardines">
+                    <img src="img/logoTransparent.png" alt="" width="45" height="45" class="d-inline-block align-text-top" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#sardines" class="nav-link">Sardines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#request-access" class="nav-link">Request Access</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#setup" class="nav-link">Setup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feedback" class="nav-link">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#import-scans" class="nav-link">Submit Local Scans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feedback" class="nav-link">Report Bugs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br />
+        <div class="container">
+            <div class="row title-image">
+                <div class="col-lg-4 col-sm-4"></div>
+                <div class="col-lg-4 col-sm-4">
+                    <img class="mx-auto d-block" src="img/sardinesPrivateBetaTitle.png" width="80%" />
+                </div>
+                <div class="col-lg-4 col-sm-4"></div>
+            </div>
+            <br />
+            <p>
+                <strong>Current Server Address:</strong> 73.65.178.156 <br />
+                <strong>Latest Version:</strong> Private Beta V0.1.5
+            </p>
+
+            <div id="sardines">
+                <h4>What is Sardines?</h4>
+                <p>
+                    Sardines is an app to see how busy public places are. Data is collected with an algorithm that uses bluetooth and geolocation data to calculate the number of smartphones in a given area. Most people carry a smartphone,
+                    so this becomes an accurate way of measuring population. <br />
+                    The app integrates Google Maps which gives users an interactive map that displays how busy places are. For the app to function properly, it needs seed data. This will allow users to get accurate and up-to-date
+                    information. <br />
+                    Private Beta Testers will look for bugs in the app as well as perform bluetooth scans around the Salt Lake area.
+                </p>
+                <h5>Screenshots</h5>
+                <div class="row mobile-image">
+                    <div class="col-lg-5 col-sm-1"></div>
+                    <div class="col-lg-2 col-sm-10">
+                        <div id="appCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/sardines-map-light.jpg" class="d-block w-100" alt="Sardines Map Light Mode" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/sardines-search-dark.jpg" class="d-block w-100" alt="Sardines Search Dark Mode" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/sardines-settings-light.jpg" class="d-block w-100" alt="Sardines Search Dark Mode" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/sardines-map-dark.jpg" class="d-block w-100" alt="Sardines Map Dark Mode" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#appCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#appCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-1"></div>
+                </div>
+                <div class="row desktop-image">
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="img/sardines-map-light.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="img/sardines-map-light.jpg" alt="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="img/sardines-search-dark.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="img/sardines-search-dark.jpg" alt="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="img/sardines-settings-light.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="img/sardines-settings-light.jpg" alt="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="img/sardines-map-dark.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="img/sardines-map-dark.jpg" alt="" width="100%" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div id="request-access">
+                <a class="collapse-header" data-bs-toggle="collapse" href="#download-collapse" role="button">
+                    <h4>Request Access <i class="fas fa-plus ps-1"></i></h4>
+                </a>
+                <div class="collapse" id="download-collapse">
+                    <p>
+                        When Sardines is released to the public it will be available on the App Store and Google Play. During the beta it is only available by downloading it from the web and installing it onto your phone manually. This
+                        allows me to keep the beta private and to make rapid changes without waiting for the approval of Apple or Google.
+                    </p>
+                    <p>
+                      To request access to the private beta send an email to <a class="doc-link" href="mailto:sardinesmap@pm.me">sardinesmap@pm.me</a>
+                    </p>
+                    <p>
+                        <h5>How to install:</h5>
+                        <span class="mt-2"></span>
+                        <button class="btn bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#download-android">Android <i class="fab fa-android ps-1"></i></button>
+                        <!--
+                        <span class="ps-2"></span>
+                        <button class="btn bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#download-apple">iPhone <i class="fab fa-apple ps-1"></i></button>
+                        -->
+                    </p>
+                    <div class="collapse" id="download-android">
+                        <div class="card card-body bg-info border">
+                            <h4>Install Sardines on Android</h4>
+                            <br />
+
+                            <p>
+                                First you will need to enable 3rd party installs in your settings.
+                                <br />
+                                Have you ever installed an app outside of the Google Play Store?<br />
+                                If so, you can skip this part of the tutorial.
+                            </p>
+                            <p>
+                                <button class="btn bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#install-3rd-party-android">Enable 3rd Party Install <i class="fab fa-android ps-1"></i></button>
+                            </p>
+                            <div class="collapse" id="install-3rd-party-android">
+                                <div>
+                                    <p>
+                                        1. Swipe down from the top of your screen and tap on the Settings cog.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <img src="img/install-android-1.png" alt="Open Settings" width="100%" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <br />
+                                    <p>2. Scroll down and tap on ‘Biometrics and Security.’</p>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <img src="img/install-android-2.png" alt="Biometrics and Security." width="100%" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <br />
+                                    <p>3. Tap on ‘Install Unknown Apps.’</p>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <img src="img/install-android-3.png" alt="Tap install unknown apps" width="100%" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <br />
+                                    <p>
+                                        4. Tap on the application that you’ll use to download the files.
+                                        <br />
+                                        (most likely Firefox or Chrome)
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <img src="img/install-android-4.png" alt="Tap install unknown apps" width="100%" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <br />
+                                    <p>
+                                        5. Tap the toggle switch next to ‘Allow from this source.’
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <img src="img/install-android-5.png" alt="tap allow from this source" width="100%" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br />
+                                <br />
+                            </div>
+                            <div>
+                                <p>
+                                    <br />
+
+                                    Once the APK is downloaded, click it and follow the instructions. <br />
+                                    If it gives you a warning saying "Google cannot scan this file for malicious code" just click "ignore" or "continue anyway". Since the app has not been uploaded to the Google Play Store, their virus
+                                    checker is not active.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="collapse" id="download-apple">
+                        <div class="card card-body bg-info border">
+                            <h4>Install Sardines on iPhone</h4>
+                            <br />
+                            I'm gonna have to figure out how to side load apps to iPhones...
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <br />
+
+            <div id="setup">
+                <a class="collapse-header" data-bs-toggle="collapse" href="#setup-collapse" role="button">
+                    <h4>Setup <i class="fas fa-plus ps-1"></i></h4>
+                </a>
+                <div class="collapse" id="setup-collapse">
+                    <p>
+                        Once the app has been downloaded you need to do a couple things before getting started. A Data Collector is a special role that gives you more control over the scans the app makes.
+                    </p>
+
+                    <h5>How to become a Data Collector:</h5>
+
+                    <div>
+                        <p>1. Copy your User ID from the settings page.</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="img/copy-user-id.jpg" alt="Copy User ID" width="100%" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br />
+                        <p>
+                            2. Send an email to
+                            <a class="doc-link" href="mailto:sardinesmap@pm.me">sardinesmap@pm.me</a>
+                            <br />
+                            Paste your User ID into the body of the email. <br />
+                            To speed things up, include your name and the phrase “data collector” in the subject of your email.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="img/data-collector-email.jpg" alt="Data Collector Email" width="100%" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br />
+                        <h5>Modes</h5>
+                        <strong>Local mode:</strong> Allows you to collect scans on your device and later send them to the server. (This is useful if the central server is down or you run into a bug) <br />
+
+                        <strong>Live mode:</strong> Allows you to interact with the server (use the map and search feature as well as submit scans automatically).
+                    </div>
+                    <div>
+                        <br />
+                        <h5>Change Domain</h5>
+                        During the beta, the server may change at any time. You will need to update the address when it does.
+
+                        <div>
+                            <br />
+                            <p>1. Go to the settings page and switch to live mode.</p>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12">
+                                    <img src="img/highlight-local.jpg" alt="Data Collector Email" width="100%" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <br />
+                            <p>
+                                2. Enter the new domain (the current domain is
+                                <strong>73.65.178.156</strong>)
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12">
+                                    <img src="img/highlight-domain.jpg" alt="Data Collector Email" width="100%" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <br />
+                            <p>3. Clear the app from your recents and reopen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div id="import-scans">
+                <a class="collapse-header" data-bs-toggle="collapse" href="#local-scans-collapse" role="button">
+                    <h4>Submit Local Scans <i class="fas fa-plus ps-1"></i></h4>
+                </a>
+
+                <div class="collapse" id="local-scans-collapse">
+                    <p>
+                        Local Scans are stored on your device and need to me added to the database.
+                    </p>
+                    <div>
+                        <p>1. Copy your Local Scans from the settings page.</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="img/copy-local-scans.jpg" alt="Copy Local Scans" width="100%" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br />
+                        <p>
+                            2. Send an email to
+                            <a href="mailto:sardinesmap@pm.me">sardinesmap@pm.me</a> with your local scans.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="img/local-scans-email.jpg" alt="Copy Local Scans" width="100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div id="feedback">
+                <h4>Feedback / Report Bugs</h4>
+                <div>
+                    To send feedback or report bugs please send an email to
+                    <a class="doc-link" href="mailto:sardinesmap@pm.me">sardinesmap@pm.me</a><br />
+                    Please include either "feedback" or "bug report" in the subject line.
+                </div>
+            </div>
+            <br />
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/1ecd8ddeef.js" crossorigin="anonymous"></script>
+    </body>
+</html>
